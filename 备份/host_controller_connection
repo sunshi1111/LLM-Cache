@@ -1,0 +1,10 @@
+// 主机与控制器连接示意图
+digraph {
+	host [label="主机" fillcolor=lightgreen shape=box style=filled]
+	controller1 [label="控制器" fillcolor=lightgreen shape=box style=filled]
+	controller2 [label="控制器" fillcolor=lightgreen shape=box style=filled]
+	host -> controller1 [label=PCIe color=coral penwidth=2]
+	controller1 -> host [label=PCIe color=coral penwidth=2]
+	controller1 -> controller2 [label="PCIe SSD" color=skyblue penwidth=2]
+	controller2 -> controller1 [label="PCIe SSD" color=skyblue penwidth=2]
+}

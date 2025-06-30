@@ -1,0 +1,163 @@
+/home/ms-admin/.cache/huggingface/hub/models--google--gemma-7b-it-pytorch/blobs/caf242310d83b3ff40d7eae5e1ba4104315de4f5b68d840b3a1379ca70a66bb0
+
+
+
+python chat_with_gemma_version3.py \
+    --ckpt /home/ms-admin/.cache/huggingface/hub/models--google--gemma-7b-it-pytorch/blobs/caf242310d83b3ff40d7eae5e1ba4104315de4f5b68d840b3a1379ca70a66bb0 \
+    --variant 7b \
+    --device cuda \
+    --output_len 1024 \
+    --use-crail \
+    --crail-cache-dir /kvcache \
+    --crail-jar /home/ms-admin/sunshi/crail-example/target/crail-kvcache-client-1.0-SNAPSHOT-jar-with-dependencies.jar \
+    --crail-conf /home/ms-admin/sunshi/crail/conf \
+    --debug
+
+/home/ms-admin/Downloads/gemma-2b-it.ckpt
+
+
+python chat_with_gemma_version3.py \
+    --ckpt  /home/ms-admin/Downloads/gemma-2b-it.ckpt \
+    --variant 2b \
+    --device cuda \
+    --output_len 1024 \
+    --use-crail \
+    --crail-cache-dir /kvcache \
+    --crail-jar /home/ms-admin/sunshi/crail-example/target/crail-kvcache-client-1.0-SNAPSHOT-jar-with-dependencies.jar \
+    --crail-conf /home/ms-admin/sunshi/crail/conf \
+    --debug
+
+
+
+
+
+ python chat_with_gemma_version2.py --ckpt /home/ms-admin/.cache/huggingface/hub/models--google--gemma-7b-it-pytorch/blobs/caf242310d83b3ff40d7eae5e1ba4104315de4f5b68d840b3a1379ca70a66bb0 --variant 7b --device cuda --output_len 512
+
+
+python chat_with_gemma_version2.py \
+    --ckpt /home/ms-admin/.cache/huggingface/hub/models--google--gemma-7b-it-pytorch/blobs/caf242310d83b3ff40d7eae5e1ba4104315de4f5b68d840b3a1379ca70a66bb0 \
+    --variant 7b \
+    --device cuda \
+    --output_len 1024 \
+    --debug
+
+
+
+python scripts/run.py --ckpt=${CKPT_PATH} --variant="${VARIANT}" --device=cuda
+
+
+
+
+python chat_with_gemma_version3.py \
+    --ckpt /home/ms-admin/Downloads/gemma-2b-it.ckpt \
+    --variant 2b \
+    --device cpu \
+    --output_len 1024 \
+    --use-crail \
+    --crail-cache-dir /kvcache \
+    --crail-jar /home/ms-admin/sunshi/crail-example/target/crail-kvcache-client-1.0-SNAPSHOT-jar-with-dependencies.jar \
+    --crail-conf /home/ms-admin/sunshi/crail/conf \
+    --debug
+
+
+python chat_with_gemma_version2.py \
+    --ckpt /home/ms-admin/Downloads/gemma-2b-it.ckpt \
+    --variant 2b \
+    --device cpu \
+    --output_len 1024 \
+    --debug
+
+
+
+    python scripts/run_multimodal.py \
+    --device=cuda \
+    --ckpt=$CKPT_PATH \
+    --variant="$VARIANT"
+
+
+
+    numpy == 1.24.4
+
+
+
+ CKPT_PATH=/home/ms-admin/.cache/huggingface/hub/models--google--gemma-2-27b-it-pytorch/snapshots/e1a064aef724728e0cecc649c2d2ca14ce87cb81/pytorch/ckpt
+
+
+
+
+python chat_with_gemma_version3.py --variant 7b  --ckpt /home/ms-admin/.cache/huggingface/hub/models--google--gemma-7b-it-pytorch/blobs/caf242310d83b3ff40d7eae5e1ba4104315de4f5b68d840b3a1379ca70a66bb0 --device cuda --cache-dir ./kv_cache
+
+
+
+python chat_with_gemma_version3.py \
+    --ckpt /home/ms-admin/.cache/huggingface/hub/models--google--gemma-7b-it-pytorch/blobs/caf242310d83b3ff40d7eae5e1ba4104315de4f5b68d840b3a1379ca70a66bb0 \
+    --variant 7b \
+    --device cuda \
+    --output_len 1024 \
+    --cache-dir ./gemma_kv_cache \
+    --debug
+
+python chat.py --device=cuda --ckpt=/home/ms-admin/.cache/huggingface/hub/models--google--gemma-2-27b-it-pytorch/snapshots/e1a064aef724728e0cecc649c2d2ca14ce87cb81/pytorch/ckpt --variant=27b
+
+
+CUDA_VISIBLE_DEVICES=0 python scripts/run.py \
+     --ckpt=${CKPT_PATH} \
+     --variant="${VARIANT}"\
+     --device=cuda \
+     --prompt="who are you"
+
+
+python chat.py --ckpt /home/ms-admin/.cache/huggingface/hub/models--google--gemma-7b-it-pytorch/blobs/caf242310d83b3ff40d7eae5e1ba4104315de4f5b68d840b3a1379ca70a66bb0 --variant 7b --device cuda
+
+
+
+
+python chat_with_gemma_version3.py \
+    --ckpt  /home/ms-admin/.cache/huggingface/hub/models--google--gemma-2-27b-it-pytorch/snapshots/e1a064aef724728e0cecc649c2d2ca14ce87cb81/pytorch/ckpt \
+    --variant 27b \
+    --device cuda \
+    --output_len 1024 \
+    --use-crail \
+    --crail-cache-dir /kvcache \
+    --crail-jar /home/ms-admin/sunshi/crail-example/target/crail-kvcache-client-1.0-SNAPSHOT-jar-with-dependencies.jar \
+    --crail-conf /home/ms-admin/sunshi/crail/conf \
+    --debug
+
+
+/home/ms-admin/.cache/huggingface/hub/models--google--gemma-3-12b-it/snapshots/96b6f1eccf38110c56df3a15bffe176da04bfd80
+
+
+python scripts/run.py \
+  --device=cuda \
+  --variant=27b \
+  --ckpt=/home/ms-admin/.cache/huggingface/hub/models--google--gemma-2-27b-it-pytorch/snapshots/e1a064aef724728e0cecc649c2d2ca14ce87cb81/pytorch/ckpt \
+  --output_len=100 \
+  --prompt="最近的AI技术发展如何？请详细说明。" \
+  --quant=True
+
+
+
+python scripts/run_multimodal.py \
+  --variant=12b \
+  --device=cuda \
+  --ckpt=/home/ms-admin/sunshi/model.ckpt \
+  --output_len=50 \
+  --seed=42  
+
+
+python chat_with_gemma3.py --ckpt /home/ms-admin/sunshi/model.ckpt --variant 12b --device cuda --output_len 300 --interactive=True --use_crail --crail_cache_dir /kvcache --crail_jar /home/ms-admin/sunshi/crail-example/target/crail-kvcache-client-1.0-SNAPSHOT-jar-with-dependencies.jar --crail_conf /home/ms-admin/sunshi/crail/conf
+python chat_with_gemma3.py --ckpt /home/ms-admin/sunshi/model.ckpt --variant 12b --device cuda --output_len 300 --interactive=True  --cache_dir /dev/shm/gemma3_cache
+python chat_with_gemma3_test.py --ckpt /home/ms-admin/sunshi/model.ckpt --variant 12b --device cuda --output_len 300 --interactive=True
+
+
+/home/ms-admin/sunshi/Crail_SPDK_IB/spdk/
+
+
+
+python test.py --ckpt /home/ms-admin/workspace2/model2.ckpt --variant 12b --device cuda --output_len 300 --interactive=True --use_crail --crail_cache_dir /kvcache --crail_jar /home/ms-admin/sunshi/crail-example/target/crail-kvcache-client-1.0-SNAPSHOT-jar-with-dependencies.jar --crail_conf /home/ms-admin/sunshi/crail/conf --batch_mode=True --debug=True --save_results=False
+python test.py --ckpt /home/ms-admin/workspace2/model2.ckpt --variant 12b --device cuda --output_len 300 --interactive=True --cache_dir /dev/shm/gemma3_cache --batch_mode=True --debug=True --save_results=False
+python test1.py --ckpt /home/ms-admin/workspace2/model2.ckpt --variant 12b --device cuda --output_len 300 --debug=True
+
+
+python test.py --ckpt /home/ms-admin/sunshi/model.ckpt --variant 4b --device cuda --output_len 300 --interactive=True --cache_dir /dev/shm/gemma3_cache --batch_mode=True --debug=True --save_results=False
+python test1.py --ckpt /home/ms-admin/sunshi/model.ckpt --variant 4b --device cuda --output_len 300 --debug=True
